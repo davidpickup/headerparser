@@ -1,0 +1,22 @@
+{
+  "name": "headerparser",
+  "version": "1.0.0",
+  "description": "Request hearder parser.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/davidpickup/headerparser.git"
+  },
+  "author": "David Pickup",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidpickup/headerparser/issues"
+  },
+  "homepage": "https://github.com/davidpickup/headerparser#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
