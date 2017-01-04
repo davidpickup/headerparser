@@ -3,10 +3,11 @@ var app = express();
 
 app.get('', function (req, res) {
     var ip = req.ip;
+    var xip = req.get('X-Forwarded-For').split(',')[0] || ip;
     var language = req.get('Accept-Language').split(',')[0];
-    var software = req.get('User-Agent');
+    var software = req.get('User-Agent').match(/\([^\(\)\n\f]*\)/)[0];
   res.send({
-      'ip':ip,
+      'ip':xip,
       'language':language,
       'software':software
   });
